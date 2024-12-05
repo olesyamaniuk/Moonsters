@@ -21,6 +21,19 @@ document.addEventListener('DOMContentLoaded', () => {
   );
 });
 
+const reviewsList = document.querySelector('.reviews-list');
+
+if (window.innerWidth > 1200) {
+  reviewsList.classList.add('reviews-list-desk');
+}
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 1200) {
+    reviewsList.classList.add('reviews-list-desk');
+  } else {
+    reviewsList.classList.remove('reviews-list-desk');
+  }
+})
 
 
 

@@ -10,14 +10,14 @@ $(function () {
     dots: false,
     centerMode: true,
     cssEase: 'linear',
-
-    
+    prevArrow: '.gallery__list-left',
+    nextArrow: '.gallery__list-right',
   });
 });
 
 
 $(function () {
-  $('.benefits-list').slick({
+  $('.reviews-list-desk').slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -28,7 +28,8 @@ $(function () {
     dots: false,
     centerMode: true,
     cssEase: 'linear',
-
+    prevArrow: '.reviews__list-left',
+    nextArrow: '.reviews__list-right',
     
   });
 });
